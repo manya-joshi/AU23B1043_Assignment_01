@@ -1,0 +1,34 @@
+print("Welcome to Our Restaurant")
+
+choice = input("Do you want to place your order? (1 for Yes, 2 for No): ")
+menu = [
+    "Dal tadka",
+    "Misal pav",
+    "Aluchya Wadya",
+    "Malai kofta",
+    "Rajma chawal",
+    "Palak paneer",
+    "Pav bhaji",
+    "Dal makhani",
+    "Mattar paneer",
+    "Baingan bharta"
+]
+if choice == '1':
+    print("Here is our menu:")
+    for index, item in enumerate(menu, start=1):
+        print(f"{index}. {item}")
+
+    num = int(input("Enter the number of orders: "))
+    
+    for i in range(num):
+        name = input(f"Enter the name of order {i+1}: ")
+    
+    print("Your order is placed.")
+    print("Thank you for ordering!")
+    print("Have A Nice Day!!")
+
+elif choice == '2':
+    print("No Problem.")
+
+else:
+    print("Invalid input. Please enter 1 for Yes or 2 for No.")
