@@ -1,0 +1,14 @@
+def get_tshirt():
+    user_name = input("Enter Your Name: ")
+    brand_name = input("Enter the brand you are looking for: ")
+    tshirt_size = input("Enter your t-shirt size (XS, S, M, L, XL): ")
+    check_brand(user_name, brand_name, tshirt_size)
+
+def check_brand(user_name, brand_name, tshirt_size):
+    brand_list = ["A", "B", "C", "D", "E"]
+    if brand_name in brand_list:
+        print(f"Hi {user_name},\nThe brand {brand_name} in size {tshirt_size} is available in our store.")
+    else:
+        print(f"Hi {user_name},\nUnfortunately, the brand {brand_name} you are looking for is not available in our store!!")
+
+get_tshirt()
